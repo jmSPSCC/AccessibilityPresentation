@@ -212,6 +212,10 @@
           .prevnext{
               display:none;
           }
+          header{
+              font-size: 80%;
+              border-radius: 0;
+          }
           nav{
               display:none;
               background-image: none;
@@ -219,13 +223,22 @@
               height: 100vh;
               border: 1px solid black;
               border-radius: 15px;
-              padding-right:2%;
-              font-size: 90%;
+          }
+          .slicknav_nav{
+            padding-right:5%;
+            font-size: 90%;
+            width: 40%;
           }
           .slicknav_menu{
               display:block;
               background-color: white;
               float: left;
+              clear:both;
+          }
+          #content{
+              clear:both;
+              padding: 2%;
+              margin: 2%;
           }
         }
       </style>
@@ -248,9 +261,11 @@
 
             $('nav').slicknav({
                 label:'',
-                prependTo: 'main',
-                closeOnClick: true
+                prependTo: 'main'
             });
+            $('#content, nav').click(()=>{
+                $('nav').slicknav('close');
+            })
           });
 
       </script>

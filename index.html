@@ -332,20 +332,25 @@
             display: none;
             background-image: none;
             background-color: powderblue;
-            height: 100vh;
             border: 1px solid black;
             border-radius: 15px;
           }
           .slicknav_nav {
-            padding-right: 5%;
             font-size: 90%;
             width: 40%;
+            z-index: 1;
           }
           .slicknav_menu {
+            position:absolute;
+            top:17%;
+            left:2%;
+            z-index: 1;
             display: block;
             background-color: white;
-            float: left;
-            clear: both;
+            width: 100%;
+          }
+          .slicknav_btn{
+            float:left;
           }
           #content {
             clear: both;
@@ -353,9 +358,12 @@
             margin: 2%;
           }
           .content {
-            top: 17%;
+            top: 19%;
             left: 0;
             bottom: 0;
+          }
+          .content h2{
+            text-align: center;
           }
         }
       </style>

@@ -5,112 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Web Accessibility</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
     />
-    
+
     <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"
+    />
+  </head>
   <body>
     <header>
       <a href="index.html">
         <h1>Web Accessibility</h1>
-        <h3>The What, Why, and How of improving your site.</h3>
+        <h3>The What, Why, and How</h3>
       </a>
     </header>
     <main>
-        <noscript>
-            This page works better with JavaScript enabled!
-        </noscript>
+      <noscript> This page works better with JavaScript enabled! </noscript>
       <nav>
-            <a href="#what">What is Web Accessibility?</a>
-            <a href="#why">Why Does it Matter?</a>
-            <a href="#test">How To Test Accessibility</a>
-            <a href="#implement">How To Implement It</a>
-            <a href="#sources">Sources</a></li>
+        <a href="#what">What is Web Accessibility?</a>
+        <a href="#why">Why Does it Matter?</a>
+        <a href="#test">How To Test Accessibility</a>
+        <a href="#implement">How To Implement It</a>
+        <a href="#sources">Sources</a>
       </nav>
       <div id="content">
         <div id="what">
-          <h2>What is Web Accessibility?</h2>
-          <p>
-            Web Accessibility is the practice of making your website easier to use for everyone,
-             especially those with disabilities. It includes considerations towards responsive
-             design for all types of devices, proper use of HTML tags and their attributes, including 
-             functionality for assistive technologies and screen readers, and more. 
-          </p>
-          <div class="prevnext">
-              <a class="next" href="#why">Next</a>
+          <div class="content">
+            <h2>What is Web Accessibility?</h2>
+            <p>
+              Web Accessibility is the practice of making your website easier to
+              use for everyone, especially those with disabilities.
+            </p>
+            <p>
+              It includes considerations towards responsive design for all types
+              of devices, proper use of HTML tags and their attributes,
+              including functionality for assistive technologies and screen
+              readers, and more.
+            </p>
           </div>
+          <div class="prevnext"><a class="next" href="#why">Next</a></div>
         </div>
         <div id="why">
-          <h2>Why does it matter?</h2>
-          <p></p>
-            <div class="prevnext">
-                <a class="prev" href="#what">Previous</a>
-                <a class="next" href="#test">Next</a>
-            </div>
+          <div class="content">
+            <h2>Why does it matter?</h2>
+            Web Accessibility is important for several reasons:
+            <ul>
+              <li>
+                It ensures that users with disabilities are more easily able to
+                use your site.
+              </li>
+              <li>
+                It makes your site more accessible to all users on mobile
+                devices or with slower connections.
+              </li>
+              <li>
+                It helps your site acheive higher rankings in search engines.
+              </li>
+              <li>
+                It reduces the risk of legal action resulting from a website
+                that may be seen as discriminating against the disabled.
+              </li>
+            </ul>
+            <p>
+              According to
+              <a href="https://www.w3.org/WAI/business-case/">w3.org</a>, "at
+              least one billion people – 15% of the world’s population – have a
+              recognized disability." This includes a variety of issues such as
+              visual, auditory, and physical impairments among others. Imagine
+              being unable to hear content on a media rich site that does not
+              include captions or relying on a screen reader, which describes
+              the content on a page, that is unable to decipher improperly
+              formatted code. Users who experience such issues are likely to
+              quickly leave your site. Keeping your site up to snuff with
+              current accessibility standards encourages these users to stay and
+              revisit your site.
+            </p>
+            <p>
+              This doesn't only affect the population living with a disibility
+              however, as all users benefit from the design choices that create
+              accessible websites. An accessible site that's been designed to
+              look good and be easy to use on all devices will inevitably also
+              work well on mobile devices like smartphones and tablets.
+              According to
+              <a
+                href="https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/"
+                >Statista</a
+              >, as of 3rd quarter 2018, 52.4% of worldwide website traffic is
+              done with a mobile device. That means a little over half of the
+              people visiting your site will need it to function with ease even
+              if they aren't on a traditional computer.
+            </p>
+            <p>
+              Your site will also benefit from increased traffic; not only do
+              users who would have left your site due to inaccessibility stay
+              and return, but most search engines rank accessible websites
+              higher than others. Because of this, accessibility in design
+              should be considered during Search Engine Optimization (SEO).
+            </p>
+            <p>
+              Additionally, the Americans with Disabilities Act (ADA), which
+              states that “places of public accommodation” are accessible to the
+              disabled, can be considered to be violated by a website that is
+              difficult or impossible to be used by disabled users. In the past
+              decade, both private litigants and the Department of Justice (DOJ)
+              have initiated legal action against sites that are inaccessible
+              with some success and the DOJ is soon expected to release
+              guidelines specifically regarding websites. According to
+              <a href="https://www.w3.org/WAI/business-case/">w3.org</a>, "the
+              Convention on the Rights of People with Disabilities (CRPD) is a
+              comprehensive human rights document that includes a direct
+              reference to the rights of all people to have equal access to
+              communications technology. Passed by the General Assembly of the
+              United Nations, more than 175 countries ratified it by 2018." As
+              time passes the legal and financial risk of ignoring web
+              accessibility grows.
+            </p>
+            <p>
+              In most cases, the design and implementation of web accessibility
+              is quick and easy. The added costs are minimal, but the benefits
+              of increased traffic, better user experience and reduced legal
+              risk are substantial.  
+            </p>
+          </div>
+          <div class="prevnext">
+            <a class="prev" href="#what">Previous</a>
+            <a class="next" href="#test">Next</a>
+          </div>
         </div>
         <div id="test">
-          <h2>How To Test Accessibility</h2>
-          <p></p>
-            <div class="prevnext">
-                <a class="prev" href="#why">Previous</a>
-                <a class="next" href="#implement">Next</a>
-            </div>
+          <div class="content">
+            <h2>How To Test Accessibility</h2>
+            <p></p>
+          </div>
+          <div class="prevnext">
+            <a class="prev" href="#why">Previous</a>
+            <a class="next" href="#implement">Next</a>
+          </div>
         </div>
         <div id="implement">
-          <h2>How To Implement It</h2>
-          <p></p>
+          <div class="content">
+            <h2>How To Implement It</h2>
+            <p></p>
+          </div>
           <div class="prevnext">
-                <a class="prev" href="#test">Previous</a>
-                <a class="next" href="#sources">Next</a>
-            </div>
+            <a class="prev" href="#test">Previous</a>
+            <a class="next" href="#sources">Next</a>
+          </div>
         </div>
         <div id="sources">
-          <h2>Sources</h2>
-          <ul>
-            <li>
-              <a href="www.youtube.com/watch?v=wkvslBGkhZY"
-                >What's New in Web Accessibility (Google I/O'18)</a
-              >
-            </li>
-            <li>
-              <a
-                href="www.employerlawreport.com/2015/12/articles/eeo/website-accessibility-regulations-delayed-until-2018-but-businesses-should-not-table-the-issue-until-then/"
-                >Website Accessibility Regulations Delayed until 2018 but
-                Businesses Should Not Table The Issue Until Then</a
-              >
-            </li>
-            <li>
-              <a href="webaccess.berkeley.edu/resources/tips/web-accessibility"
-                >Top 10 Tips for Making Your Website Accessible</a
-              >
-            </li>
-            <li>
-              <a href="www.w3.org/WAI/fundamentals/accessibility-intro/"
-                >Introduction to Web Accessibility</a
-              >
-            </li>
-            <li>
-              <a href="www.w3.org/WAI/test-evaluate/preliminary/"
-                >Easy Checks - A First Review of Web Accessibility</a
-              >
-            </li>
-            <li>
-              <a href="www.w3.org/WAI/business-case/"
-                >The Business Case for Digital Accessibility</a
-              >
-            </li>
-          </ul>
+          <div class="content">
+            <h2>Sources</h2>
+            <ul>
+              <li>
+                <a href="www.youtube.com/watch?v=wkvslBGkhZY"
+                  >What's New in Web Accessibility (Google I/O'18)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="www.employerlawreport.com/2015/12/articles/eeo/website-accessibility-regulations-delayed-until-2018-but-businesses-should-not-table-the-issue-until-then/"
+                  >Website Accessibility Regulations Delayed until 2018 but
+                  Businesses Should Not Table The Issue Until Then</a
+                >
+              </li>
+              <li>
+                <a
+                  href="webaccess.berkeley.edu/resources/tips/web-accessibility"
+                  >Top 10 Tips for Making Your Website Accessible</a
+                >
+              </li>
+              <li>
+                <a href="www.w3.org/WAI/fundamentals/accessibility-intro/"
+                  >Introduction to Web Accessibility</a
+                >
+              </li>
+              <li>
+                <a href="www.w3.org/WAI/test-evaluate/preliminary/"
+                  >Easy Checks - A First Review of Web Accessibility</a
+                >
+              </li>
+              <li>
+                <a href="www.w3.org/WAI/business-case/"
+                  >The Business Case for Digital Accessibility</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/"
+                >
+                  Mobile percentage of website traffic 2018 | Statistic</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="prevnext">
-                <a class="prev" href="#implement">Previous</a>
-            </div>
+            <a class="prev" href="#implement">Previous</a>
+          </div>
         </div>
       </div>
     </main>
@@ -127,6 +227,14 @@
           text-align: center;
           border-bottom: 1px solid black;
           border-radius: 15px;
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          right: 0%;
+          width: 100%;
+          height: 20%;
+          overflow: hidden;
+          z-index: 1;
         }
         header h1 {
           font-size: 310%;
@@ -137,18 +245,19 @@
         }
         nav {
           float: left;
-          height: 90vh;
           border-right: 1px solid black;
+          border-bottom: 1px solid black;
+          border-radius: 0 0 15px 0;
           margin-right: 1%;
-          background-image:linear-gradient(to right, white, white, powderblue);
-          font-size: 110%;
+          background-image: linear-gradient(to right, white, white, powderblue);
+          font-size: 130%;
           font-weight: bold;
           padding-left: 2%;
-          position: fixed;
-          z-index: 1;
+          position: absolute;
           left: 0;
-          overflow-x:hidden;
-          width: 24%;
+          top: 20%;
+          overflow: hidden;
+          width: 20%;
         }
 
         nav a {
@@ -157,118 +266,125 @@
           padding: 5% 2% 5% 2%;
           display: block;
         }
-        nav a:hover{
-            background-color: powderblue;
-            border-radius: 15px 0 0 15px;
+        nav a:hover {
+          background-color: powderblue;
+          border-radius: 15px 0 0 15px;
         }
-        .slicknav_menu{
-            display:none;
+        .slicknav_menu {
+          display: none;
         }
         #content {
           padding-top: 5%;
           margin-left: 26%;
         }
+        .content {
+          position: absolute;
+          top: 20%;
+          bottom: 8%;
+          left: 21%;
+          right: 0%;
+          overflow: auto;
+          padding: 2%;
+        }
         h2 {
           margin-right: 10%;
         }
-        p {
-          margin: 0 5% 3% 5%;
+
+        .prevnext {
+          position: absolute;
+          bottom: 1%;
+          left: 30%;
+          right: 30%;
+          width: 40%;
+          border: 1px solid black;
+          border-radius: 15px;
         }
-        p::first-letter{
-            font-weight: bold;
+        .prevnext a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          font-size: 110%;
+          padding: 2% 5%;
+          border-radius: 15px;
         }
-        ul li {
-          list-style: none;
+        .prevnext a:hover {
+          background-color: powderblue;
         }
-        .prevnext{
-            position:fixed;
-            bottom: 3%;
-            right: 5%;
-            width: 65%;
-            border: 1px solid black;
-            border-radius: 15px;
+        .prev {
+          float: left;
         }
-        .prevnext a{
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 110%;
-            padding: 2% 5%;
-            border-radius: 15px;
-        }
-        .prevnext a:hover{
-            background-color: powderblue;
-        }
-        .prev{
-            float:left;
-        }
-        .next{
-            float:right;
+        .next {
+          float: right;
         }
         @media (max-width: 680px) {
           nav {
             display: none;
           }
-          .prevnext{
-              display:none;
+          .prevnext {
+            display: none;
           }
-          header{
-              font-size: 80%;
-              border-radius: 0;
+          header {
+            font-size: 80%;
+            border-radius: 0;
+            height: 16%;
           }
-          nav{
-              display:none;
-              background-image: none;
-              background-color: powderblue;
-              height: 100vh;
-              border: 1px solid black;
-              border-radius: 15px;
+          nav {
+            display: none;
+            background-image: none;
+            background-color: powderblue;
+            height: 100vh;
+            border: 1px solid black;
+            border-radius: 15px;
           }
-          .slicknav_nav{
-            padding-right:5%;
+          .slicknav_nav {
+            padding-right: 5%;
             font-size: 90%;
             width: 40%;
           }
-          .slicknav_menu{
-              display:block;
-              background-color: white;
-              float: left;
-              clear:both;
+          .slicknav_menu {
+            display: block;
+            background-color: white;
+            float: left;
+            clear: both;
           }
-          #content{
-              clear:both;
-              padding: 2%;
-              margin: 2%;
+          #content {
+            clear: both;
+            padding: 2%;
+            margin: 2%;
+          }
+          .content {
+            top: 17%;
+            left: 0;
+            bottom: 0;
           }
         }
       </style>
       <script>
-          $(document).ready(()=>{
-            $('#content').children().hide();
+        $(document).ready(() => {
+          $("#content")
+            .children()
+            .hide();
+          let hash = $(window.location.hash);
+          if (hash.length) hash.show();
+          else $("#what").show();
+          window.onhashchange = () => {
+            $("#content")
+              .children()
+              .hide();
             let hash = $(window.location.hash);
-            if (hash.length)
-                hash.show();
-            else
-                $('#what').show();
-            window.onhashchange = ()=>{
-                $('#content').children().hide();
-                let hash = $(window.location.hash);
-                if (hash.length)
-                    hash.show();
-                else
-                    $('#what').show();
-            }
+            if (hash.length) hash.show();
+            else $("#what").show();
+          };
 
-            $('nav').slicknav({
-                label:'',
-                prependTo: 'main'
-            });
-            $('#content, nav').click(()=>{
-                $('nav').slicknav('close');
-            })
-            $('.slicknav_btn').attr('aria-label','menu');
+          $("nav").slicknav({
+            label: "",
+            prependTo: "main"
           });
-
+          $("#content, nav").click(() => {
+            $("nav").slicknav("close");
+          });
+          $(".slicknav_btn").attr("aria-label", "menu"); //keeps slicknav menu button accessible to screen readers
+        });
       </script>
     </footer>
   </body>

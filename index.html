@@ -152,6 +152,15 @@
               navigte to this site and follow these instructions for an example
               of how to use it:
             </p>
+            <figure>
+              <img
+                src="lighthouseAuditScreenshot.JPG"
+                alt="Screenshot of a Lighthouse Audit"
+              />
+              <figcaption>
+                After an audit, Lighthouse provides tips for what to check next.
+              </figcaption>
+            </figure>
             <ul>
               <li>
                 In Chrome, open the developer's tools by pressing F12 or
@@ -176,7 +185,7 @@
               <li>Check the box for "Clear Storage."</li>
               <li>Click "Run Audits." That's it!</li>
             </ul>
-             <p>
+            <p>
               Now you'll see Chrome get to work and give you a score for the
               site as well as an explanation for any missed points, tips for how
               to improve, and next steps for a more thorough audit.
@@ -185,6 +194,16 @@
               In addition,
               <a href="https://www.w3.org/WAI/test-evaluate/">w3.org</a> has
               excellent information and resources for accessibility evaluation.
+            </p>
+            <p>
+              Using these tools will give your company an excellent starting
+              point. Once problems are identified they can be addressed quickly
+              before taking a more detailed sweep through areas that need to be
+              manually checked. This way, there will be a quick initial return
+              of results as your team performs manual checks. Going forward, as
+              new content is created for your site it will be easy to maintain 
+              accessibility standards; the most time consuming part is making 
+              changes to an existing site. 
             </p>
           </div>
           <div class="prevnext">
@@ -239,9 +258,7 @@
               </li>
             </ul>
           </div>
-          <div class="prevnext">
-            <a class="prev" href="#test">Previous</a>
-          </div>
+          <div class="prevnext"><a class="prev" href="#test">Previous</a></div>
         </div>
       </div>
     </main>
@@ -313,9 +330,22 @@
           top: 20%;
           bottom: 8%;
           left: 21%;
-          right: 5%;
-          overflow: auto;
+          right: 0;
+          overflow-y: auto;
           padding: 2%;
+        }
+        figure {
+          float: right;
+          width: 50%;
+          
+        }
+        figure img {
+          border: 1px solid black;
+          width: 100%;
+        }
+        figcaption {
+          font-size: 80%;
+          font-style: italic;
         }
         h2 {
           margin-right: 10%;
@@ -346,6 +376,11 @@
         }
         .next {
           float: right;
+        }
+        @media (max-width: 1600px) {
+          figure {
+            width: 50%;
+          }
         }
         @media (max-width: 680px) {
           nav {
@@ -399,6 +434,11 @@
           }
           .content h2 {
             text-align: center;
+          }
+          figure {
+            width: 100%;
+            margin: auto;
+            align-content: center;
           }
         }
       </style>

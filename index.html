@@ -35,7 +35,6 @@
         <a href="#what">What is Web Accessibility?</a>
         <a href="#why">Why Does it Matter?</a>
         <a href="#test">How To Test Accessibility</a>
-        <a href="#implement">How To Implement It</a>
         <a href="#sources">Sources</a>
       </nav>
       <div id="content">
@@ -134,7 +133,7 @@
               In most cases, the design and implementation of web accessibility
               is quick and easy. The added costs are minimal, but the benefits
               of increased traffic, better user experience and reduced legal
-              risk are substantial.  
+              risk are substantial.
             </p>
           </div>
           <div class="prevnext">
@@ -145,23 +144,55 @@
         <div id="test">
           <div class="content">
             <h2>How To Test Accessibility</h2>
-            <p></p>
+            <p>
+              You may wonder if your site is already accessible and if it would
+              be hard to check. Luckily, there are many tools available to
+              assist you! One of the best and easiest to use of such tools is
+              integrated into the Chrome browser. If you have Chrome available,
+              navigte to this site and follow these instructions for an example
+              of how to use it:
+            </p>
+            <ul>
+              <li>
+                In Chrome, open the developer's tools by pressing F12 or
+                Control+Shift+I.
+              </li>
+              <li>
+                In the top bar, click Audits. You may need to click the ">>"
+                button to expand the choices.
+              </li>
+              <li>
+                Select "Mobile" to run the audit simulating a smartphone,
+                otherwise use "Desktop".
+              </li>
+              <li>
+                In the "Audits" section, you'll see a variety of things you can
+                test for. For now, uncheck all except "Accessibility."
+              </li>
+              <li>
+                In "Throttling" you can choose to simulate slower connection
+                speeds.
+              </li>
+              <li>Check the box for "Clear Storage."</li>
+              <li>Click "Run Audits." That's it!</li>
+            </ul>
+             <p>
+              Now you'll see Chrome get to work and give you a score for the
+              site as well as an explanation for any missed points, tips for how
+              to improve, and next steps for a more thorough audit.
+            </p>
+            <p>
+              In addition,
+              <a href="https://www.w3.org/WAI/test-evaluate/">w3.org</a> has
+              excellent information and resources for accessibility evaluation.
+            </p>
           </div>
           <div class="prevnext">
             <a class="prev" href="#why">Previous</a>
-            <a class="next" href="#implement">Next</a>
-          </div>
-        </div>
-        <div id="implement">
-          <div class="content">
-            <h2>How To Implement It</h2>
-            <p></p>
-          </div>
-          <div class="prevnext">
-            <a class="prev" href="#test">Previous</a>
             <a class="next" href="#sources">Next</a>
           </div>
         </div>
+
         <div id="sources">
           <div class="content">
             <h2>Sources</h2>
@@ -209,7 +240,7 @@
             </ul>
           </div>
           <div class="prevnext">
-            <a class="prev" href="#implement">Previous</a>
+            <a class="prev" href="#test">Previous</a>
           </div>
         </div>
       </div>
@@ -282,7 +313,7 @@
           top: 20%;
           bottom: 8%;
           left: 21%;
-          right: 0%;
+          right: 5%;
           overflow: auto;
           padding: 2%;
         }
@@ -328,7 +359,9 @@
             border-radius: 0;
             height: 20%;
           }
-          header h3{display:none;}
+          header h3 {
+            display: none;
+          }
           nav {
             display: none;
             background-image: none;
@@ -342,16 +375,16 @@
             z-index: 1;
           }
           .slicknav_menu {
-            position:absolute;
-            top:21%;
-            left:2%;
+            position: absolute;
+            top: 21%;
+            left: 2%;
             z-index: 1;
             display: block;
             background-color: white;
             width: 100%;
           }
-          .slicknav_btn{
-            float:left;
+          .slicknav_btn {
+            float: left;
           }
           #content {
             clear: both;
@@ -361,10 +394,10 @@
           .content {
             top: 24%;
             left: 2%;
-            right:2%;
+            right: 2%;
             bottom: 2%;
           }
-          .content h2{
+          .content h2 {
             text-align: center;
           }
         }
